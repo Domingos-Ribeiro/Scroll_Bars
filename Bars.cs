@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Scroll_Bars
 {
-    public partial class Form1 : Form
+    public partial class Bars : Form
     {
-        public Form1()
+        public Bars()
         {
             InitializeComponent();
+        }
+
+        private void BarraHorizTeste_Scroll(object sender, ScrollEventArgs e)
+        {
+            LblTeste.Text = BarraHorizTeste.Value.ToString();
         }
     }
 }
